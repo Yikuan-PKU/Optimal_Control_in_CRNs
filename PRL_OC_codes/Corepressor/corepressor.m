@@ -1,15 +1,4 @@
 function [problem,guess] = corepressor(tau,para)
-%myProblem - Template file for optimal control problem definition
-%
-%Syntax:  [problem,guess] = myProblem
-%
-% Outputs:
-%    problem - Structure with information on the optimal control problem
-%    guess   - Guess for state, control and multipliers.
-%
-% Other m-files required: none
-% MAT-files required: none
-%
 % Copyright (C) 2019 Yuanbo Nie, Omar Faqir, and Eric Kerrigan. All Rights Reserved.
 % The contribution of Paola Falugi, Eric Kerrigan and Eugene van Wyk for the work on ICLOCS Version 1 (2010) is kindly acknowledged.
 % This code is published under the MIT License.
