@@ -1,6 +1,6 @@
 clear all;
 close all;
-taus = [0.40,0.5,0.7,1,3,5];
+taus = [0.409,0.5,0.7,1,3,5];
 for i=1:1:6
     tau=taus(i);%%control time 
     para=[5 0.1 50 0.8 0.1 0.1 0.8]; %%[K1 K2 K3 p1i p2i p1f p2f] K1=k12+k21,K2=k13+k31,r1=p2/p1,r2=p1/(1-(p1+p2)).
