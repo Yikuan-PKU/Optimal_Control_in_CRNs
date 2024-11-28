@@ -44,47 +44,5 @@ function solution = OC(para,tau,settings)
     C12 = (P1.*K12-P2.*K21).*log((P1.*K12)./(P2.*K21));
     CCost = C12;
     
-    
-    p1f = para(3) + zeros(L,1);
-    pi=para(2);
-    pf=para(3);
-    ri=(0.95-pi)/pi;
-    rf=(0.95-pf)/pf;
-    [p,r] = analyticalsolution(tau,100,ri,rf,para(2));
-    p1 = cat(1,P1i,p',p1f);
-    xp = cat(1,xi,linspace(0,tau,length(p))',xf);
-    
-    R = cat(1,K12i./K21i,r',K12f./K21f);
-    xr = cat(1,xi,linspace(0,tau,length(p)-1)',xf);
-    
-    linewidh = 1.2;
-    subplot(2,2,1);
-    hold on
-    plot(xx,P1,'r' ,'LineWidth',linewidh)
-    plot(xx,P2,'b' ,'LineWidth',linewidh)
-    xlabel('t')
-    ylabel('Probability')
-    legend('P1','P2')
-    
-    subplot(2,2,2);
-    hold on
-    plot(xx,R12,'r','LineWidth',linewidh)
-    plot(xx,r12,'r','LineWidth',linewidh,'LineStyle','-.')
-    plot(xr,R,'b','LineWidth',linewidh,'LineStyle',':')
-    xlabel('t')
-    legend('r12','p2/p1','r12 in adiabatic limit')
-    
-    subplot(2,2,3);
-    hold on
-    plot(xx,J12,'r','LineWidth',linewidh)
-    xlabel('t')
-    legend('Φ12')
-    
-    
-    subplot(2,2,4);
-    hold on
-    plot(xx,CCost,'Color',[0.3 0 0.3],'LineWidth',1);
-    xlabel('t')
-    legend('entropy production rate')
 end
 
