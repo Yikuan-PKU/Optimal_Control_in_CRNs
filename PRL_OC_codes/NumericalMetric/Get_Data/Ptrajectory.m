@@ -1,6 +1,6 @@
 function [t,p] = Ptrajectory(x,r,T)
 tspan = [0 T];
-ic = [0.8 0.1 0.1];%需要和bc一致；
+ic = [0.8 0.1 0.1];
 opts = odeset('RelTol',1e-8,'AbsTol',1e-8);
 [t,p] = ode45(@(t,p) myode(t,p,x,r(1,:),r(2,:)), tspan, ic, opts);
 end
