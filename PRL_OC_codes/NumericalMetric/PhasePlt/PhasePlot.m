@@ -16,15 +16,15 @@ for i=1:1:length(K13s)
         p3min=c(1);
         p3max=c(end);
         p3average = mean(c);
-        P(i,j)=1;%(p3average-0.1)/0.1;
+        P(i,j)=1;
         if (p1min<0.098)
-            P(i,j)=2;%1*(0.1-p1min)/0.1;
+            P(i,j)=2;
         elseif (p2min<0.098)
-            P(i,j)=2;%1*(0.1-p2min)/0.1;
+            P(i,j)=2;
         elseif (p3min<0.099)
-                P(i,j)=3;%1*(0.1-p3average)/0.1;
+                P(i,j)=3;
                 if (p3min<0.099&&p3max>0.105)
-                    P(i,j)=4;%1*mean(abs(c-0.1))/0.1;
+                    P(i,j)=4;
                 end
         end                
     end
