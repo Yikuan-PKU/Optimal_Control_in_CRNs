@@ -1,10 +1,3 @@
-% main_h_MeshRefinement - Main script to solve the Optimal Control Problem
-%
-% Fed-batch fermentor optimal control problem
-%
-% The problem was adapted from Example 2, Section 12.4.2 of
-% J.E. Cuthrell and L. T. Biegler. Simultaneous optimization and solution methods for batch reactor control profiles. Computers and Chemical Engineering, 13:49-62, 1989.
-%
 % Copyright (C) 2019 Yuanbo Nie, Omar Faqir, and Eric Kerrigan. All Rights Reserved.
 % The contribution of Paola Falugi, Eric Kerrigan and Eugene van Wyk for the work on ICLOCS Version 1 (2010) is kindly acknowledged.
 % This code is published under the MIT License.
