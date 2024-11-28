@@ -15,7 +15,7 @@ Here is the instruction to install ICLOCS2.5 in PC: http://www.ee.ic.ac.uk/ICLOC
   ```
   It should take several minites to finish all installation.
    
-## Run Demo in each subfolders for figures shown in the Paper
+## Run Demo in Each Subfolders for Figures Shown in the Paper
 
 
  * To get the figures related to the three state model, simply type:  
