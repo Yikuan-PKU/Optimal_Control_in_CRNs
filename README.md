@@ -2,7 +2,7 @@
 Demo code for paper "Geometry of optimal control in chemical reaction networks in the adiabatic limit"
 https://arxiv.org/abs/2407.05620
 
-If you have any questions, feel free to contact me by yikuanzhang@outlook.com
+If you have any questions, feel free to contact me at yikuanzhang@outlook.com
 ## Usage
 
 Requirments: Matlab 2021; ICLOSC2.5; IPOPT;
