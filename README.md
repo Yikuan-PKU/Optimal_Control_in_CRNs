@@ -3,7 +3,7 @@ Demo code for paper "Geometry of optimal control in chemical reaction networks i
 https://arxiv.org/abs/2407.05620
 ## Usage
 
-Requirments: Matlab 2021; ICLOSC2.5;
+Requirments: Matlab 2021; ICLOSC2.5; IPOPT;
 
 Here is the instruction to install ICLOCS2.5 in PC: http://www.ee.ic.ac.uk/ICLOCS/default.htm
 * Clone, Setup project on your PC
@@ -64,5 +64,29 @@ Here is the instruction to install ICLOCS2.5 in PC: http://www.ee.ic.ac.uk/ICLOC
     ```
     $ matlab -batch costPlot.mlx 
     ```
+ * To get the figures related to the Phase Diagram, simply type:
+    ```
+    $ cd ./PhaseDiagram
+    ```
+    Before plotting the Phase Diagram, get the data for the ensemble comprising the Phase Diagram:
+    ```
+    $ cd ./Get_Data
+    ```
+    ```
+    $ matlab -batch PhaseData.m
+    ```
+    Then, transfer the generated data file "PhaseData.mat" into the folder "PhasePlt". Get into this folder and plot,
+    ```
+    $ cd ./PhasePlt
+    ```
+    ```
+    $ matlab -batch PhasePlot.m && PhasePlot_simplified.m
+    ```
 
-    
+ * To get the FIG. S3, simply type:
+
+    ```
+    $ matlab -batch ./PhaseDiagram/PhasePlt/BoundPlot.mlx
+    ```
+   
+   
